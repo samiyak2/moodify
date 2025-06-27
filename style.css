@@ -111,16 +111,7 @@ button#submitBtn:hover {
   color: #ccc;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  .container {
-    padding: 20px;
-  }
-
-  button.pill {
-    font-size: 0.9em;
-  }
+#preview {
+  margin-top: 20px;
+  text-align: center;
 }
