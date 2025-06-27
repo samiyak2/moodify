@@ -124,7 +124,11 @@ gcloud run deploy moodify-backend \
   --allow-unauthenticated \
   --set-env-vars GCP_PROJECT=YOUR_PROJECT_ID,PUBSUB_TOPIC=moodify-topic
 ```
+----
+#### Backend Preview
+https://moodify-backend-242728022788.asia-south1.run.app/
 
+![image](https://github.com/user-attachments/assets/535e0224-dc60-4361-9eac-99234b7dc998)
 ---
 
 ### 3. Create a Pub/Sub Topic
