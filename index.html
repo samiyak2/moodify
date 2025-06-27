@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Moodify 🎧</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Moodify</h1>
-    <p class="tagline">Get Spotify playlists based on your vibe</p>
+    <p>Get Spotify playlists based on your mood and vibe</p>
 
     <label>Mood</label>
     <div class="pills" id="moodPills">
       <span class="pill">Happy</span>
       <span class="pill">Sad</span>
       <span class="pill">Romantic</span>
+      <span class="pill">Energetic</span>
+      <span class="pill">Calm</span>
+      <span class="pill">Moody</span>
     </div>
 
     <label>Language</label>
     <div class="pills" id="langPills">
       <span class="pill">English</span>
       <span class="pill">Hindi</span>
+      <span class="pill">Punjabi</span>
+      <span class="pill">K-Pop</span>
+      <span class="pill">Spanish</span>
+      <span class="pill">Arabic</span>
     </div>
 
     <label>Artist (optional)</label>
-    <input type="text" id="artistInput" placeholder="e.g. Arijit Singh" />
+    <input type="text" id="artistInput" placeholder="e.g. Arijit Singh">
 
     <button id="submitBtn">Get Playlist</button>
-
     <div id="status"></div>
     <div id="preview"></div>
   </div>
