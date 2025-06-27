@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Moodify 🎧</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <h1>Moodify</h1>
-    <p class="tagline">Get a Spotify playlist based on your mood</p>
+    <p class="tagline">Get Spotify playlists based on your vibe</p>
 
-    <form id="moodForm">
-      <label>Mood</label>
-      <div class="pills" id="mood-pills">
-        <button type="button" class="pill" data-value="happy">Happy</button>
-        <button type="button" class="pill" data-value="sad">Sad</button>
-        <button type="button" class="pill" data-value="romantic">Romantic</button>
-        <button type="button" class="pill" data-value="energetic">Energetic</button>
-        <button type="button" class="pill" data-value="chill">Chill</button>
-      </div>
+    <label>Mood</label>
+    <div class="pills" id="moodPills">
+      <span class="pill">Happy</span>
+      <span class="pill">Sad</span>
+      <span class="pill">Romantic</span>
+    </div>
 
-      <label>Language</label>
-      <div class="pills" id="lang-pills">
-        <button type="button" class="pill" data-value="english">English</button>
-        <button type="button" class="pill" data-value="hindi">Hindi</button>
-        <button type="button" class="pill" data-value="korean">Korean</button>
-        <button type="button" class="pill" data-value="instrumental">Instrumental</button>
-      </div>
+    <label>Language</label>
+    <div class="pills" id="langPills">
+      <span class="pill">English</span>
+      <span class="pill">Hindi</span>
+    </div>
 
-      <label for="artist">Optional Artist</label>
-      <input type="text" id="artist" placeholder="e.g. Arijit Singh">
+    <label>Artist (optional)</label>
+    <input type="text" id="artistInput" placeholder="e.g. Arijit Singh" />
 
-      <button type="submit" id="submitBtn">🎵 Get Playlist</button>
-    </form>
+    <button id="submitBtn">Get Playlist</button>
 
     <div id="status"></div>
+    <div id="preview"></div>
   </div>
 
   <script src="script.js"></script>
